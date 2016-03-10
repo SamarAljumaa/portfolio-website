@@ -1,8 +1,34 @@
 <?php get_header(); ?>
 
 <div class="main">
-  <div class="container">
+  <div class="wrapper">
     <div class="content">
+
+      <?php $portfolioWork = new WP_Query(array(
+        'post_per_page' => -1,
+        'post_type' => 'portfolio' 
+      )); ?>
+      <?php if($portfolioWork -> have_posts()): ?>
+        <?php while($portfolioWork -> have_posts()): ?>
+          <?php $portfolioWork -> the_post(); ?>
+          <h2><?php the_title() ?></h2>
+
+          <h3> <?php the_field ('short_description') ?></h3>
+          <?php while(the_field('long_description')): ?>
+            <p> <?php the_field('long_description') ?></p>
+          <?php endwhile; ?>
+
+          <?php $image = get_field('images') ?>
+          <img src=" <?php echo $image['sizes']['medium'] ?> " alt="">
+
+          <?php while(has_sub_field('skills')): ?>
+          <p><?php the_sub_field('skill') ?></p>
+          <?php endwhile; ?>
+
+       <?php endwhile; ?>
+
+        <!-- <?php wp_reset_postdata(); ?>
+      <?php endif; ?>
 
       <?php if ( have_posts() ) the_post(); ?>
 
@@ -30,13 +56,12 @@
     	 * called loop-archives.php and that will be used instead.
     	 */
       get_template_part( 'loop', 'archive' );
-      ?>
+      ?> -->
 
     </div><!--/content-->
 
-    <?php get_sidebar(); ?>
 
-  </div> <!-- /.container -->
+  </div> <!-- /.wrapper -->
 </div> <!-- /.main -->
 
 <?php get_footer(); ?>

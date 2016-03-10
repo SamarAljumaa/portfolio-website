@@ -1,6 +1,6 @@
 <footer>
-  <div class="container">
-    <p>&copy; HackerYou <?php echo date('Y'); ?></p>
+  <div class="wrapper">
+    <p> Website built by: Samar Aljumaa <?php echo date('Y'); ?></p>
   </div>
 </footer>
 

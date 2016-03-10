@@ -1,7 +1,7 @@
 <?php get_header();  ?>
 
 <div class="main">
-  <div class="container">
+  <div class="wrapper">
 
     <div class="content">
       <?php // Start the loop ?>
@@ -13,7 +13,7 @@
       <?php endwhile; // end the loop?>
     </div> <!-- /,content -->
 
-    <?php get_sidebar(); ?>
+    <!-- <?php get_sidebar(); ?> -->
 
   </div> <!-- /.container -->
 </div> <!-- /.main -->

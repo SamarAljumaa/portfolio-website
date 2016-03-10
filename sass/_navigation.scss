@@ -1,14 +1,118 @@
-ul.menu {
+#menuBurger {
+	display: none;
 	margin: 0;
-	padding: 0;
-	li {
-		display: inline;
-		margin-right: 10px;
-		a {
-			color: #333;
-			padding: 10px;
-			background: #333;
+  padding: 0; 
+  width: 35px;
+  height: 35px;
+  position: relative;
+  margin: 50px auto;
+  transform: rotate(0deg);
+  transition: .5s ease-in-out;
+  span {
+  	display: block;
+	  position: absolute;
+	  height: 5px;
+	  width: 100%;
+	  background: rgba(84, 84, 84, 1);
+	  border-radius: 9px;
+	  opacity: 1;
+	  left: 0;
+	  transform: rotate(0deg);
+	  transition: .25s ease-in-out;
+  }
+  span:nth-child(1) {
+    top: 0px;
+  }
+
+  span:nth-child(2) {
+    top: 10px;
+  }
+
+  span:nth-child(3) {
+    top: 20px;
+  }
+}
+#menuBurger.open span:nth-child(1) {
+	top: 10px;
+	transform: rotate(135deg);
+}
+#menuBurger.open span:nth-child(2) {
+  opacity: 0;
+  left: -60px;
+}
+#menuBurger.open span:nth-child(3) {
+	top: 10px;
+  transform: rotate(-135deg);	
+}
+
+// ul.menu {
+// 	margin: 0;
+// 	padding: 0;
+// 	li {
+// 		display: inline;
+// 		margin-right: 10px;
+// 		a {
+// 			color: #333;
+// 			padding: 10px;
+// 			background: #333;
+// 			color: white;
+// 		}
+// 	}
+// }
+
+.overlayMenu{
+	display: none;
+	width: 100vw;
+  position: fixed;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 555;
+  padding: 1% 2%;
+  background: rgba(58, 58, 58, 1);
+	.wrapper{
+		i{
+			width: 100%;
+			font-size: 4rem;
+			text-align: right;
 			color: white;
 		}
+		ul.menu {
+			width: 100%;
+			// float:right;
+			margin: 0;
+			padding: 0;
+			// display: none;
+			li {
+				// display: inline;
+				// border: 2px solid rgba(255, 145, 115, 1);
+				width: 100%;
+				// float: left;
+	  		margin-top: 5%;
+				list-style-type: none;
+				a {
+					font-size: 3rem;
+					width: 100%;
+					display: block;
+					text-align: center;
+					padding: 10px;
+					color: white;
+					// float: left;
+					transition: all .5s;
+				}
+				a:hover{
+					color: rgba(255, 145, 115, .7);
+					// color: white;
+				}
+			}
+		}
+	}	
+}	
+
+@media (max-width:764px){
+	#menuBurger {
+		display: block;
 	}
 }

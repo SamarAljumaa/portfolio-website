@@ -5,6 +5,7 @@
   <meta charset="<?php bloginfo( 'charset' ); ?>" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href='https://fonts.googleapis.com/css?family=Playfair+Display:700|Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
   <title><?php  wp_title('|', true, 'right'); ?></title>
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
   <!-- stylesheets should be enqueued in functions.php -->
@@ -15,17 +16,34 @@
 <body <?php body_class(); ?>>
 
 <header>
-  <div class="container">
+  <div class="wrapper clearfix">
+    <div class="logo">
+      <img src="" alt="">
+    </div>
     <h1>
-      <a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name', 'display' ); ?>" rel="home">
+      <!-- <a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name', 'display' ); ?>" rel="home">
         <?php bloginfo( 'name' ); ?>
-      </a>
+      </a> -->
     </h1>
-
-    <?php wp_nav_menu( array(
-      'container' => false,
-      'theme_location' => 'primary'
-    )); ?>
-  </div> <!-- /.container -->
+    <div class="mainNav">
+      <?php wp_nav_menu( array(
+        'container' => false,
+        'theme_location' => 'primary'
+      )); ?>
+    </div>
+    <div id="menuBurger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div> <!-- /.wrapper -->
+  <div class="overlayMenu">
+     <div class="wrapper">
+        <?php wp_nav_menu( array(
+          'container' => false,
+          'theme_location' => 'primary'
+        )); ?>
+     </div>
+  </div>   
 </header><!--/.header-->
 
