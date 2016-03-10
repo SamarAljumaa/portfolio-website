@@ -1,6 +1,10 @@
 h1, h2 {
 	font-family: 'Playfair Display', serif;
 }
+h1, h2, h3, h4 {
+	margin:0;
+	
+}
 
 h1 {
 	font-size: 20rem;
@@ -19,10 +23,10 @@ h4 {
 }
 
 a {
-	color: #BA209B;
+	color: white;
 	text-decoration: none;
 	&:hover {
-		color: #D424B1;
+		color: rgba(255, 145, 115, 1);
 	}
 }
 

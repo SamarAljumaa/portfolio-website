@@ -10,6 +10,8 @@
 @import 'normalize';
 @import 'typography';
 @import 'navigation';
+@import 'front-page';
+@import 'about';
 @import 'sidebar';
 @import 'comments';
 @import 'footer';
@@ -35,6 +37,7 @@ body {
 .wrapper {
 	max-width: 1200px;
 	margin: 0 auto;
+	width: 80%;
 }
 
 .content {
