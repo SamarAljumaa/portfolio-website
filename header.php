@@ -17,26 +17,31 @@
 
 <header>
   <div class="wrapper clearfix">
-    <div class="logo">
-      <img src="" alt="">
+    <div class="headerNav">
+      <div class="logo">
+        <img src="" alt="">
+      </div>
+      <h1>
+        <!-- <a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name', 'display' ); ?>" rel="home">
+          <?php bloginfo( 'name' ); ?>
+        </a> -->
+      </h1>
+      <div class="mainNav">
+        <?php wp_nav_menu( array(
+          'container' => false,
+          'theme_location' => 'primary'
+        )); ?>
+      </div>
+      <div class="navMenu">
+        <div id="menuBurger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div> <!-- /.wrapper -->
+      
     </div>
-    <h1>
-      <!-- <a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name', 'display' ); ?>" rel="home">
-        <?php bloginfo( 'name' ); ?>
-      </a> -->
-    </h1>
-    <div class="mainNav">
-      <?php wp_nav_menu( array(
-        'container' => false,
-        'theme_location' => 'primary'
-      )); ?>
-    </div>
-    <div id="menuBurger">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-  </div> <!-- /.wrapper -->
   <div class="overlayMenu">
      <div class="wrapper">
         <?php wp_nav_menu( array(

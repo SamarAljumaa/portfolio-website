@@ -1,0 +1,43 @@
+.portfolio {
+	background: rgba(244, 244, 244, 1);
+	.wrapper {
+		.content {
+			margin: 0 auto;
+			width: 100%;
+		}
+		.individualProject {
+			position: relative;
+			margin: 0 auto;
+			.projectInfo {
+				right: 0;
+				background: white;
+				width: 25%;
+				position: absolute;
+				padding: 20px;
+				@include rtl() {
+					left: 150px;
+					right: auto;
+				}
+			}
+			.projectImage {
+				width: 45%;
+				img {
+					width: 100%;
+				}
+			}
+		}
+		ul {
+			list-style-type: none;
+			padding-left: 0;
+			margin: 0;
+			
+			li {
+				float: left;
+				i {
+					font-size: 5.5rem;
+					color: rgba(235, 127, 124, .75);
+				}
+			}
+		}
+	}
+}
