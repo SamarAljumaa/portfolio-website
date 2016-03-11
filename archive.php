@@ -11,9 +11,9 @@
       <?php if($portfolioWork -> have_posts()): ?>
         <?php while($portfolioWork -> have_posts()): ?>
           <?php $portfolioWork -> the_post(); ?>
-          <h2><?php the_title() ?></h2>
+          <h4><?php the_title() ?></h4>
 
-          <h3> <?php the_field ('short_description') ?></h3>
+          <p> <?php the_field ('short_description') ?></p>
           <?php while(the_field('long_description')): ?>
             <p> <?php the_field('long_description') ?></p>
           <?php endwhile; ?>
@@ -22,7 +22,7 @@
           <img src=" <?php echo $image['sizes']['medium'] ?> " alt="">
 
           <?php while(has_sub_field('skills')): ?>
-          <p><?php the_sub_field('skill') ?></p>
+          <p><?php the_sub_field('the_skill'); ?></p>
           <?php endwhile; ?>
 
        <?php endwhile; ?>

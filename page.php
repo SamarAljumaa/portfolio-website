@@ -20,7 +20,7 @@
 
 <section class="skills">
   <div class="wrapper">
-    <h2> <?php the_field('skills_title'); ?></h2>
+    <h2 class="sideHeader"> <?php the_field('skills_title'); ?></h2>
     <p> <?php the_field('skills_content_') ?></p>
   </div>
 </section>

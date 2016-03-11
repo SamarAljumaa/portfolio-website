@@ -16,9 +16,22 @@
 }
 
 .skills {
+	padding-top: 30px;
 	width: 100%;
-	height:100vh;
-	.wrapper {
+	// height:100vh;
+	background: rgba(244, 244, 244, 1);
+	position: relative;
 
+	.wrapper {
+		.sideHeader {
+			// font-size: 5.5rem;
+			// transform: rotate(-90deg);
+			// position: absolute;
+			// left: 0;
+		}
+		p{
+			margin: 0;
+		}
 	}
+
 }
