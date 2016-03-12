@@ -19,29 +19,28 @@
   <div class="wrapper clearfix">
     <div class="headerNav">
       <div class="logo">
-        <img src="" alt="">
+        <img src="<?php the_field('logo_image', 'option'); ?>" alt="">
       </div>
       <h1>
         <!-- <a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name', 'display' ); ?>" rel="home">
           <?php bloginfo( 'name' ); ?>
         </a> -->
       </h1>
-      <div class="mainNav">
-        <?php wp_nav_menu( array(
-          'container' => false,
-          'theme_location' => 'primary'
-        )); ?>
-      </div>
       <div class="navMenu">
-        <div id="menuBurger">
+        <div id="menuBurger" class="mobileMenu">
           <span></span>
           <span></span>
           <span></span>
         </div>
       </div>
-    </div> <!-- /.wrapper -->
-      
-    </div>
+    </div> <!-- /.wrapper -->    
+  </div>
+  <div class="mainNav">
+    <?php wp_nav_menu( array(
+      'container' => false,
+      'theme_location' => 'primary'
+    )); ?>
+  </div>
   <div class="overlayMenu">
      <div class="wrapper">
         <?php wp_nav_menu( array(

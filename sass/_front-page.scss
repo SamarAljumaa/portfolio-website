@@ -8,6 +8,20 @@
 		background-size: cover;
 		.wrapper {
 			// height: 100%;
+			.titles {
+				position: absolute;
+    		bottom: 25%;
+			}
+			h2, h3 {
+				color: rgba(255, 255, 255, 0.92);
+				text-shadow: 1px 1px 0 rgb(51, 47, 47);
+			}
+			h2 {
+				font-size: 7rem;
+			}
+			h3 {
+				padding-left: 30px;
+			}
 			.languageButtons {
 				position: absolute;
 				margin: 0 auto;

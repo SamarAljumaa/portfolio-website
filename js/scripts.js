@@ -1,19 +1,27 @@
 var app = {};
 
 app.hamburger = function() {
-	$('#menuBurger').click(function(e){
-		e.preventDefault();
-		$(this).toggleClass('open');
-	  $('.overlayMenu').fadeIn(400).show();
+	$('.mobileMenu').on('click', function(){
+		// e.preventDefault();
+	  $('.overlayMenu').fadeToggle(),$(this).toggleClass('open');
 	});
-	$('').on('click', function (e) {
-	  e.preventDefault();
-	  $('.overlayMenu').fadeOut(400).hide();
-	});
+	// $('#menuBurger').on('click', function (e) {
+	//   e.preventDefault();
+	//   $('.overlayMenu').fadeOut(400).hide();
+	// });
 };
 
+app.slideMenu = function() {
+	$('#menuBurger').on('click', function(){
+		// e.preventDefault();
+		$('.mainNav').toggleClass('active');
+	  $(this).toggleClass('open');
+	});
+}
+
 app.init = function() {
-	app.hamburger();
+	// app.hamburger();
+	app.slideMenu();
 };
 
 $(function(){
