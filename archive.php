@@ -3,7 +3,8 @@
 <section class="portfolio">
   <div class="wrapper">
     <div class="content">
-
+      <h2 class="portfolioTitleEng">My Work</h2>
+      <h2 class="portfolioTitleArb">أعمالي</h2>
       <?php $portfolioWork = new WP_Query(array(
         'post_per_page' => -1,
         'post_type' => 'portfolio' 
@@ -22,6 +23,8 @@
             <ul class="clearfix"><?php while(has_sub_field('skills')): ?>
               <li><?php the_sub_field('the_skill'); ?></li>
               <?php endwhile; ?></ul>
+              <button class="portfolioLinkEng"><a href="<?php the_field('website_url'); ?> ">View Project</a></button>
+              <button class="portfolioLinkArb"><a href="<?php the_field('website_url'); ?> ">زور الصفحة</a></button>
           </div>
 
           <div class="projectImage clearfix">

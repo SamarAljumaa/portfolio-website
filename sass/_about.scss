@@ -49,18 +49,38 @@
     position: absolute;
     right: 50px;
     top: 125px;
+    @include rtl() {
+    	// right: initial;
+    	left: 50px;
+			float: right;
+    	margin: 5%;
+    	position: static;
+    }
 	}
 	.aboutInfo {
 		// height: 100vh;
 		padding: 50px;
 		overflow-y: scroll;
+		// @include rtl() {
+		// }
 		.prominentTitle {
 			font-size: 9rem;
 			text-align: initial;
 			color: rgba(235, 127, 124, 1);
-			@include rtl() {
-				font-size: 8.5rem;
-			}
+			// @include rtl() {
+			// 	font-size: 8.5rem;
+			// 	float: right;
+   //  		margin-top: 5%;
+			// }
+		}
+		h2 {
+			// @include rtl(){
+			// 	float: right;
+	  //   	// margin-top: 5%;	
+			// }
+		}
+		p {
+			clear: both;
 		}
 	}
 	.skills {
@@ -103,6 +123,20 @@
 	.about .aboutImage {
 		display: block;
 	}
+	.about .aboutInfo .prominentTitle {
+		font-size: 8rem;
+		@include rtl() {
+			font-size: 8.5rem;
+			float: right;
+  		margin-top: 5%;
+		}
+	}
+	.about .aboutInfo h2 {
+		@include rtl(){
+			float: right;
+    	// margin-top: 5%;	
+		}
+	}
 }
 
 @media (max-width: 700px) {
@@ -111,21 +145,38 @@
     /* padding: 25px; */
     position: static;
     margin-bottom: 5%;
+  //   @include rtl() {
+		// 	float: right;
+		// }
 	}
 	.about h2 {
 		font-size: 3.5rem;
 		float: left;
+		@include rtl() {
+			float: right;
+		}
 	}
 	.about .aboutInfo .prominentTitle {
 		float: left;
     padding: 10px;
     font-size: 7.5rem;
+    @include rtl() {
+			float: right;
+		}
 	}
 }
 
 @media (max-width: 650px) {
 	.about .aboutInfo .prominentTitle {
 		margin: 0 4% 0;
+		@include rtl() {
+			font-size: 6.5rem;
+		}
+	}	
+	.about h2 {	
+		@include rtl() {
+			font-size: 3rem;
+		}
 	}	
 	.about .aboutImage {
 		width: 150px;
@@ -136,6 +187,9 @@
 @media (max-width: 500px) {
 	.about .aboutInfo .prominentTitle {
 		margin: 0;
+		@include rtl() {
+			margin-top: 10%;
+		}
 	}	
 }
 
