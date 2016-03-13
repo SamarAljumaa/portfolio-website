@@ -1,5 +1,6 @@
 .contact {
 	.wrapper {
+		padding: 175px 50px; 
 		background: rgba(244, 244, 244, 1);
 		.contactInfo{
 			position: relative;
@@ -80,5 +81,49 @@
 		color: #ffffff;
 		border: 2px solid rgba(235, 127, 124, 1);
 		background: rgba(235, 127, 124, 1);
+	}
+}
+
+@media (max-width:768px) {
+	.contact .wrapper h2 {
+		font-size: 8rem;
+	}
+
+	.contact .wrapper .contactInfo h4 {
+		transform: initial;
+		position: initial;
+	}
+}
+
+@media (max-width:768px) {
+	.contact .wrapper .contactInfo p {
+		padding: 0 40px;
+	}
+	.contact .wrapper {
+		padding: 75px 45px;
+	}
+	.contact .wpcf7-form p:nth-child(2) {
+		width: 100%;
+		float: none;
+	}
+
+	.contact .wpcf7-form p:nth-child(3) {
+		width: 100%;
+		float: none;
+	}
+	.contact .wpcf7-form p:nth-child(5) {
+		width: 25%;
+	}
+}
+
+@media (max-width: 500px) {
+	.contact .wrapper h2 {
+		font-size: 6.5rem;
+	}
+	.contact .wpcf7-form p:nth-child(5) {
+		width: 45%;
+	}
+	.contact .wrapper .contactInfo p {
+		padding: 0 20px;
 	}
 }
