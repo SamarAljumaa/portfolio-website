@@ -1,6 +1,10 @@
 <footer>
   <div class="wrapper">
     <p> Website built by: Samar Aljumaa <?php echo date('Y'); ?></p>
+    <ul class="clearfix">
+    	<li><a href="https://ca.linkedin.com/in/samar-aljumaa-39217aa5"><i class="fa fa-linkedin"></i></a></li>
+    	<li><a href="https://github.com/SamarAljumaa"><i class="fa fa-github"></i></a></li>	
+    </ul>
   </div>
 </footer>
 
