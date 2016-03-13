@@ -12,8 +12,12 @@
       <?php if($portfolioWork -> have_posts()): ?>
         <?php while($portfolioWork -> have_posts()): ?>
           <?php $portfolioWork -> the_post(); ?>
-        <div class="individualProject">
-          <div class="projectInfo">
+        <div class="individualProject clearfix">
+          <div class="projectImage clearfix">
+            <?php $image = get_field('images') ?>
+            <img src=" <?php echo $image['sizes']['large'] ?> " alt="">
+          </div>
+          <div class="projectInfo clearfix">
             <h4><?php the_title() ?></h4>
             <p> <?php the_field ('short_description') ?></p>
             <?php while(the_field('long_description')): ?>
@@ -27,10 +31,6 @@
               <button class="portfolioLinkArb"><a href="<?php the_field('website_url'); ?> ">زور الصفحة</a></button>
           </div>
 
-          <div class="projectImage clearfix">
-            <?php $image = get_field('images') ?>
-            <img src=" <?php echo $image['sizes']['large'] ?> " alt="">
-          </div>
         </div>
 
 
