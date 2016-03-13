@@ -167,10 +167,9 @@ header {
 	}	
 }	
 
-
-
-// @media (max-width:764px){
-// 	.mainNav {
-// 		display: none;
-// 	}
-// }
+@media (max-width:764px){
+	.mainNav {
+		width: 100%;
+		background: rgba(58, 58, 58, 0.8);
+	}
+}

@@ -126,6 +126,11 @@
 	.portfolio .wrapper .individualProject .projectInfo {
 		top: 0;
 	}
+	.portfolio .wrapper .content {
+		@include rtl() {
+			padding-right: 0;
+		}
+	}	
 }
 
 @media (max-width: 980px) {
@@ -191,7 +196,7 @@
 		float: left;
 		@include rtl() {
 			float: right;
-    	margin-left: 10%;
+    	margin-left: 1%;
 		}	
 	}
 	.portfolio .wrapper button {
@@ -204,11 +209,5 @@
 
 	.portfolio .wrapper button a {
 		font-size: 1.4rem;
-	}
-}
-
-@media (max-width: 480px) {
-	.portfolio .wrapper button {
-
 	}
 }

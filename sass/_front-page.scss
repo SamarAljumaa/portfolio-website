@@ -6,6 +6,7 @@
 		height: 100vh;
 		background-repeat: no-repeat;
 		background-size: cover;
+		background-position: center;
 		.wrapper {
 			// height: 100%;
 			.titles {
@@ -25,15 +26,15 @@
 			.languageButtons {
 				position: absolute;
 				margin: 0 auto;
-				width: 100%;
+				width: 35%;
 				bottom: 100px;
-				left: 25%;
+				left: 135px;
 				button {
 					padding: 0;
 					margin: 2%;
 					border: none;
 					background: none;
-			    width: 20%;
+			    width: 45%;
 			    float: left;
 			    border: 2px solid rgba(235, 127, 124, 1);
 			    a {
@@ -57,4 +58,33 @@
 			}
 		}
 	}
+}
+
+@media (max-width: 768px) {
+	.hero .heroImage .wrapper .titles {
+		bottom: 31%;
+	}
+	.hero .heroImage .wrapper h2 {
+	  font-size: 5.5rem;
+	}
+	
+	.hero .heroImage .wrapper h3 {
+		font-size: 2rem;
+	}
+
+	.hero .heroImage .wrapper .languageButtons {
+		width: 50%;
+		left: 70px;
+		bottom: 80px;
+	}
+}
+
+@media (max-width: 480px) {
+	.hero .heroImage .wrapper h2 {
+	  font-size: 4.5rem;
+	}
+	
+	// .hero .heroImage .wrapper h3 {
+	// 	font-size: 2rem;
+	// }
 }

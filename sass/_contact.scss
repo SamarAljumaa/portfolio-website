@@ -116,14 +116,28 @@
 	}
 }
 
-@media (max-width: 500px) {
+@media (max-width: 680px) {
+
 	.contact .wrapper h2 {
-		font-size: 6.5rem;
+		font-size: 4.6rem;
 	}
+
+	.contact .wrapper .contactInfo p {
+		padding: 0;
+	}
+	.contact .wrapper .wpcf7 .wpcf7-form {
+		margin: 0;
+	}
+}
+
+@media (max-width: 500px) {
+	// .contact .wrapper h2 {
+	// 	font-size: 6.5rem;
+	// }
 	.contact .wpcf7-form p:nth-child(5) {
 		width: 45%;
 	}
-	.contact .wrapper .contactInfo p {
-		padding: 0 20px;
-	}
+	// .contact .wrapper .contactInfo p {
+	// 	padding: 0 20px;
+	// }
 }
