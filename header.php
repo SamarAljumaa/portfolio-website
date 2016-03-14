@@ -19,7 +19,9 @@
   <div class="wrapper clearfix">
     <div class="headerNav">
       <div class="logo">
-        <img src="<?php the_field('logo_image', 'option'); ?>" alt="">
+        <a href="<?php echo home_url(); ?>">
+          <img src="<?php the_field('logo_image', 'option'); ?>" alt="">
+        </a>
       </div>
       <h1>
         <!-- <a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name', 'display' ); ?>" rel="home">
