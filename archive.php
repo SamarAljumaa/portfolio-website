@@ -27,8 +27,8 @@
             <ul class="clearfix"><?php while(has_sub_field('skills')): ?>
               <li><?php the_sub_field('the_skill'); ?></li>
               <?php endwhile; ?></ul>
-              <button class="portfolioLinkEng"><a href="<?php the_field('website_url'); ?> " target="_blank">View Project</a></button>
-              <button class="portfolioLinkArb"><a href="<?php the_field('website_url'); ?> " target="_blank">زور الصفحة</a></button>
+              <a href="<?php the_field('website_url'); ?> " target="_blank"><button class="portfolioLinkEng">View Project</button></a>
+              <a href="<?php the_field('website_url'); ?> " target="_blank"><button class="portfolioLinkArb">زور الصفحة</button></a>
           </div>
 
         </div>
