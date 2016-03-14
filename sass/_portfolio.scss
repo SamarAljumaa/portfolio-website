@@ -80,6 +80,9 @@
 	    display: block;
 	    font-size: 1.8rem;
 	    float: left;
+	    @include rtl() {
+				float: right;
+			}
 			button{
 	    	color: rgba(44, 44, 44, 1);
 				background: white;
