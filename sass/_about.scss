@@ -83,6 +83,36 @@
 			clear: both;
 		}
 	}
+
+	.visitPortfolio {
+		padding: 0 50px 50px;
+		a {
+			color: white;
+	    width: 35%;
+	    display: block;
+	    font-size: 1.8rem;
+	    transition: .5s all;
+	    /* float: left; */
+	    /* margin: 2%; */
+	    margin: 0 auto;
+	    /* padding: 17px; */
+			button {
+				border: none;
+		    background: none;
+		    width: 100%;
+		    /* float: left; */
+		    border: 2px solid rgba(235, 127, 124, 1);
+		    color: white;
+		    padding: 10px;
+		    transition: .5s all;
+		    font-size: 2.6rem;
+		    font-family: opensans;
+		    background: rgba(235, 127, 124, 1);
+		    text-transform: capitalize;
+			}
+		}
+	}
+
 	.skills {
 		padding: 0px 5px 50px;
 		// position: relative;
@@ -182,6 +212,9 @@
     @include rtl() {
 			float: right;
 		}
+	}
+	.about .aboutInfo .visitPortfolio a {
+		width: 45%;
 	}
 }
 
