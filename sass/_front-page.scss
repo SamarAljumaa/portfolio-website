@@ -29,32 +29,57 @@
 				width: 35%;
 				bottom: 100px;
 				left: 135px;
-				button {
-					padding: 0;
-					margin: 2%;
-					border: none;
-					background: none;
-			    width: 45%;
-			    float: left;
-			    border: 2px solid rgba(235, 127, 124, 1);
-			    a {
-			    color: white;
-			    width: 100%;
+				a {
+					color: white;
+			    width: 46%;
 			    display: block;
 			    font-size: 1.8rem;
-			    transition: .5s all; 
-			    }
-			    a:hover {
+			    transition: .5s all;
+			    float: left;
+			    margin: 2%;
+					button {
+						// padding: 0;
+				    /* margin: 2%; */
+				    border: none;
+				    background: none;
+				    width: 100%;
+				    float: left;
+				    border: 2px solid rgba(235, 127, 124, 1);
+				    color: white;
+				    padding: 7px;
+				    transition: .5s all;
+					}
+					button:hover {
 						color: white;
 						background: rgba(235, 127, 124, 1); 
 			    }
 				}
-				button:first-child a {
-					padding:6px;
-				}
-				button:last-child a {
-					padding: 5px;
-				}
+				// button {
+				// 	padding: 0;
+				// 	margin: 2%;
+				// 	border: none;
+				// 	background: none;
+			 //    width: 45%;
+			 //    float: left;
+			 //    border: 2px solid rgba(235, 127, 124, 1);
+			 //    a {
+			 //    color: white;
+			 //    width: 100%;
+			 //    display: block;
+			 //    font-size: 1.8rem;
+			 //    transition: .5s all; 
+			 //    }
+			 //    a:hover {
+				// 		color: white;
+				// 		background: rgba(235, 127, 124, 1); 
+			 //    }
+				// }
+				// a:first-child button {
+				// 	padding:7px;
+				// }
+				// a:last-child button {
+				// 	padding: 6px;
+				// }
 			}
 		}
 	}

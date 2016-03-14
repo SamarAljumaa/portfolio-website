@@ -19,7 +19,7 @@
   <div class="wrapper clearfix">
     <div class="headerNav">
       <div class="logo">
-        <a href="<?php echo home_url(); ?>">
+        <a href="http://samaraljumaa.com">
           <img src="<?php the_field('logo_image', 'option'); ?>" alt="">
         </a>
       </div>

@@ -8,8 +8,8 @@
 				<h3> <?php the_field('hero_subheading'); ?> </h3>
 			</div>
 	    <div class="languageButtons clearfix">
-	      <button><a href="<?php the_field('english_page_link') ?>">English</a></button>
-	      <button><a href="<?php the_field('arabic_page_link') ?>">العربية</a></button>
+	      <a href="<?php the_field('english_page_link') ?>"><button>English</button></a>
+	      <a href="<?php the_field('arabic_page_link') ?>"><button>العربية</button></a>
 	    </div>
   </div> <!-- /.wrapper -->
  </div>   <!-- heroImage -->
