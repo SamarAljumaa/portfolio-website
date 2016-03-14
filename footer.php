@@ -8,6 +8,12 @@
   </div>
 </footer>
 
+<!-- Theme by themes.wearekllr.com
+	Devicons : http://devicon.fr/
+	Font Awesome Icons: http://fontawesome.io/
+	
+ -->
+
 <script>
 // scripts.js, plugins.js and jquery are enqueued in functions.php
 /* Google Analytics! */

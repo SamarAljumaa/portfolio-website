@@ -22,6 +22,10 @@
       <div class="wrapper">
         <h2 class="sideHeader"> <?php the_field('skills_title'); ?></h2>
         <p> <?php the_field('skills_content_') ?></p>
+        <ul class="clearfix"><?php while(has_sub_field('skills')): ?>
+          <li><?php the_sub_field('the_skill'); ?></li>
+          <?php endwhile; ?>
+        </ul>
       </div>
     </div>
   </section> <!-- /.about -->

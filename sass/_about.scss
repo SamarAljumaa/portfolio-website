@@ -96,6 +96,25 @@
 			p{
 				margin: 0;
 			}
+			ul {
+				list-style-type: none;
+				padding-left: 0;
+				margin: 3%;
+				@include rtl() {
+					padding-right: 0;
+				}
+				li {
+					float: left;
+					padding: 5px;
+					@include rtl() {
+						float: right;
+					}
+					i {
+						font-size: 7.25rem;
+						color: rgba(235, 127, 124, 1);
+					}
+				}
+			}
 		}
 	}
 }
