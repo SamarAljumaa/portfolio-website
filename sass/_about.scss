@@ -26,6 +26,7 @@
 		float: left;
 	}
 	h2 {
+		text-align: left;
 		font-size: 4.5rem;
 		@include rtl() {
 			font-size: 4rem;
@@ -35,6 +36,7 @@
 	}
 	p {
 		clear: both;
+		text-align: left;
 		@include rtl() {
 			text-align: right;
 		}
@@ -140,7 +142,7 @@
 						float: right;
 					}
 					i {
-						font-size: 7.25rem;
+						font-size: 4.25rem;
 						color: rgba(235, 127, 124, 1);
 					}
 				}

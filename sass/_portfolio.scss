@@ -27,9 +27,9 @@
 		}
 		.individualProject {
 			position: relative;
-			margin: 5% auto 5% 10%;
+			margin: 5% auto;
 			@include rtl() {
-				margin: 5% 10% 5% auto;	
+				margin: 5% auto;	
 			}
 			// padding: 30px;
 			.projectInfo {
